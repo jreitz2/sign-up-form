@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); </style>
+    <title>DnD Sign-Up</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="images/logo2.jpg" class="logo2">
+            DnD Sign-Up
+        </div>
+        <div class="content">
+            <div class="header">
+                Thanks for your interest in joining our DnD group! Please fill
+                out the form below to send a request. We will contact you if you
+                seem like a good fit!
+            </div>
+            <div class="middle">
+                <form action="somewhere" method="post">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label for="your-name">Your Name:</label>
+                        <input type="text" id="your-name" name="your-name" minlength="2" required>
+                    
+                        
+                    <div>
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Character Information</legend>
+                    <div>
+                        <label for="chara-name">Character Name:</label>
+                        <input type="text" id="chara-name" name="chara-name" minlength="2" required>
+                    </div>
+                    <div>
+                    Character Race:
+                    <select name="Race">
+                        <option value="human">Human</option>
+                        <option value="elf">Elf</option>
+                        <option value="dwarf">Dwarf</option>
+                        <option value="halfling">Halfling</option>
+                        <option value="orc">Orc</option>
+                        <option value="tiefling">Tiefling</option>
+                    </select>
+                    </div>
+                    <div>
+                    Combat Style:
+                        <p>
+                        <input type="radio" id="martial" name="combat" value="martial">
+                        <label for="martial">Martial</label>
+                      
+                        <input type="radio" id="caster" name="combat" value="caster">
+                        <label for="caster">Caster</label>
+                      
+                        <input type="radio" id="mixed" name="combat" value="mixed">
+                        <label for="mixed">Mixed</label>
+                        </p>
+                    </div>
+                </fieldset>
+                    
+
+                    <textarea>Why do you want to join?</textarea>
+                    <div>
+                        <button type="submit">Sign Me Up!</button>
+                    </div>
+                </form>
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>
